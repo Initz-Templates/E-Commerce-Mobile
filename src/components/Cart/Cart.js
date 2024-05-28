@@ -16,7 +16,7 @@ export default class Store extends Component {
                         if (cart.length > 0) {
                             return (
                                 <React.Fragment>
-                                    <div className='h-full'>
+                                    <div >
                                     <Title name="your" title="cart" />
                                     <CartColumns />
                                     <CartList value={value} />

@@ -73,12 +73,12 @@ class Navbar extends Component {
                   </li>)
                   }
                 </ProductConsumer>
-                <Link className="text-white bg-transparent themes" onClick={toggleTheme}>
+                <Link className="text-white bg-transparent themes" onClick={toggleTheme} style={{ cursor: 'pointer' }} >
                   {theme ? <h6>Dark Mode <FaRegMoon /></h6> : <h6>Light Mode <GoSun /></h6>}
                 </Link>
                 <Link to="/cart" className="ml-auto">
                   <ButtonContainer>
-                    <i className="fas fa-cart-plus">my cart</i>
+                    <i className="fas fa-cart-plus"> my cart</i>
                   </ButtonContainer>
                 </Link>
               </div>
@@ -110,10 +110,11 @@ class Navbar extends Component {
             </ul>
             <Link to="/cart" className="ml-auto">
               <ButtonContainer>
-                <i className="fas fa-cart-plus">my cart</i>
+                <i className="fas fa-cart-plus"></i>
+                  my cart
               </ButtonContainer>
             </Link>
-            <div className="text-white bg-transparent themes mainmenu" onClick={toggleTheme}>
+            <div className="text-white bg-transparent themes mainmenu" onClick={toggleTheme} style={{ cursor: 'pointer' }}>
               {theme ? <FaRegMoon /> : <GoSun />}
             </div>
           </DesktopNavWrapper>

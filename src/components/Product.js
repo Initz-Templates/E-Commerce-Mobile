@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import { ThemeConsumer } from './context/ThemeContexts';
 
 export default class Product extends Component {
+    
     render() {
         const {id, title, img, price, inCart} = this.props.product;
         return (

@@ -21,7 +21,9 @@ class ProductProvider extends Component {
         value = value.toLowerCase();
         let products = [];
         storeProducts.forEach(item => {
-            if(item.title.toLowerCase().includes(value) || item.info.toLowerCase().includes(value)){
+            if(item.title.toLowerCase().includes(value) 
+                // || item.info.toLowerCase().includes(value)
+            ){
                 const singleItem = { ...item };
                 products = [...products, singleItem];
             }

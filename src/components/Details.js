@@ -41,7 +41,11 @@ export default class Details extends Component {
                                             some info about product
                                     </p>
                                     <p className={theme ? "lead text-light" :"text-muted lead"}>
-                                        {info}
+                                        {info.map(infoItem => {
+                                             return (<div>{infoItem}</div>)
+                                            })
+                                        }
+                                        
                                     </p>
                                     {/*buttons*/}
                                     <div>

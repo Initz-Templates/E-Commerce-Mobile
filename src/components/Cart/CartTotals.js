@@ -21,15 +21,15 @@ export default function CartTotals({value}) {
                         </button>
                     </Link>
                     <h5>
-                        <span className={theme ? "text-title text-light" : "text-title"}>subtotal :</span>
+                        <span className={theme ? "text-title text-light" : "text-title"}>Amount :</span>
                         <strong className={theme ? " text-light" : "text-black"}>{cartSubTotal}</strong>
                     </h5>
                     <h5>
-                        <span className={theme ? "text-title text-light" : "text-title"}>subtotal :</span>
+                        <span className={theme ? "text-title text-light" : "text-title"}>Taxes :</span>
                         <strong className={theme ? " text-light" : "text-black"}>{cartTax}</strong>
                     </h5>
                     <h5>
-                        <span className={theme ? "text-title text-light" : "text-title"}>subtotal :</span>
+                        <span className={theme ? "text-title text-light" : "text-title"}>Subtotal :</span>
                         <strong className={theme ? " text-light" : "text-black"}>{cartTotal}</strong>
                     </h5>
                </div>
